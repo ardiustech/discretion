@@ -14,8 +14,8 @@ Gem::Specification.new do |spec|
   spec.homepage      = 'https://github.com/abeland/discretion'
   spec.license       = 'MIT'
 
-  spec.add_dependency 'activesupport', '~> 5.1', '>= 5.1.4'
-  spec.add_dependency 'rails', '~>5'
+  spec.add_dependency 'activesupport', '>= 5.1'
+  spec.add_dependency 'rails', '>= 5.1'
   spec.add_dependency 'request_store', '~>1.4', '>= 1.4.1'
   spec.required_ruby_version = '>= 2.2.2'
 
@@ -26,7 +26,7 @@ Gem::Specification.new do |spec|
   spec.executables   = spec.files.grep(%r{^exe/}) { |f| File.basename(f) }
   spec.require_paths = ['lib']
 
-  spec.add_development_dependency 'activerecord', '~> 5.1', '>= 5.1.4'
+  spec.add_development_dependency 'activerecord', '>= 5.1'
   spec.add_development_dependency 'bundler', '~> 1.3'
   spec.add_development_dependency 'factory_bot_rails', '~> 4.8', '>= 4.8.2'
   spec.add_development_dependency 'rake', '~> 10.5'
