@@ -19,18 +19,12 @@ module Discretion
       Discretion.set_current_viewer(orig_viewer)
     end
 
-    def omnisciently
-      # Calling Proc.new will create a Proc from the implicitly given block to
-      # the current method.
-      # cf. http://ruby-doc.org/core-2.5.0/Proc.html#method-c-new
-      acting_as(Discretion::OMNISCIENT_VIEWER, &Proc.new)
+    def omnisciently(&block)
+      acting_as(Discretion::OMNISCIENT_VIEWER, &block)
     end
 
-    def omnipotently
-      # Calling Proc.new will create a Proc from the implicitly given block to
-      # the current method.
-      # cf. http://ruby-doc.org/core-2.5.0/Proc.html#method-c-new
-      acting_as(Discretion::OMNIPOTENT_VIEWER, &Proc.new)
+    def omnipotently(&block)
+      acting_as(Discretion::OMNIPOTENT_VIEWER, &block)
     end
 
     private
